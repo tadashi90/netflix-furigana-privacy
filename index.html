@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netflix Furigana – Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --fg: #1d1b22; --muted: #66616f; --bg: #fff; --accent: #e0442f; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #eeeaf2; --muted: #a9a3b8; --bg: #121018; --accent: #ff5a47; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 20px; margin: 32px 0 8px; }
+    .updated { color: var(--muted); margin: 0 0 24px; }
+    li { margin: 8px 0; }
+    code { font-size: 0.9em; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Netflix Furigana – Privacy Policy</h1>
+  <p class="updated">Last updated: October 29, 2026</p>
+
+  <p>Netflix Furigana is a Chrome extension that adds furigana, English subtitles and word lookup to Japanese
+  subtitles on netflix.com. It does not collect, store or sell personal data, and it has no analytics,
+  tracking or ads.</p>
+
+  <h2>What the extension handles</h2>
+  <ul>
+    <li><strong>Subtitles.</strong> Japanese and English subtitle text is read and processed only in your browser.
+      The Japanese dictionary used for furigana is bundled with the extension. Subtitle files are downloaded from
+      Netflix, the same way the Netflix player downloads them.</li>
+    <li><strong>Word lookup.</strong> When you click a word in a subtitle, that single word is sent to the public
+      jisho.org API (<code>https://jisho.org/api/v1/search/words</code>) to fetch its dictionary entries. Nothing
+      else is sent: no account details, no viewing history, no identifiers. jisho.org's handling of requests is
+      covered by its own policies. You can turn word lookup off in the extension's popup.</li>
+    <li><strong>Pronunciation.</strong> Audio uses Chrome's built-in speech synthesis. If Chrome uses an online
+      voice (such as "Google 日本語"), Chrome sends the spoken reading to Google to generate the audio, under
+      Google's privacy policy.</li>
+    <li><strong>Settings.</strong> Your settings (furigana on/off, size, English on/off, lookup on/off) are saved
+      with <code>chrome.storage.sync</code>, so Chrome may sync them between your own signed-in browsers. The
+      developer never receives them.</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>The developer does not receive any data from the extension, and no data is sold or transferred to third
+  parties for advertising, credit or any other purpose besides the word lookup described above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:leo.t.nozawa@gmail.com">leo.t.nozawa@gmail.com</a></p>
+</main>
+</body>
+</html>
