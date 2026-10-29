@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Netflix Furigana – Privacy Policy</title>
+  <title>Furigana Subtitles – Privacy Policy</title>
   <style>
     :root { color-scheme: light dark; --fg: #1d1b22; --muted: #66616f; --bg: #fff; --accent: #e0442f; }
     @media (prefers-color-scheme: dark) { :root { --fg: #eeeaf2; --muted: #a9a3b8; --bg: #121018; --accent: #ff5a47; } }
@@ -19,22 +19,20 @@
 </head>
 <body>
 <main>
-  <h1>Netflix Furigana – Privacy Policy</h1>
+  <h1>Furigana Subtitles for Netflix – Privacy Policy</h1>
   <p class="updated">Last updated: October 29, 2026</p>
 
-  <p>Netflix Furigana is a Chrome extension that adds furigana, English subtitles and word lookup to Japanese
-  subtitles on netflix.com. It does not collect, store or sell personal data, and it has no analytics,
-  tracking or ads.</p>
+  <p>Furigana Subtitles for Netflix is a Chrome extension that adds furigana, English subtitles and word lookup
+  to Japanese subtitles on netflix.com. The developer does not collect, store or sell personal data, and the
+  extension has no analytics, tracking or ads. It is not affiliated with Netflix.</p>
 
   <h2>What the extension handles</h2>
   <ul>
     <li><strong>Subtitles.</strong> Japanese and English subtitle text is read and processed only in your browser.
-      The Japanese dictionary used for furigana is bundled with the extension. Subtitle files are downloaded from
-      Netflix, the same way the Netflix player downloads them.</li>
-    <li><strong>Word lookup.</strong> When you click a word in a subtitle, that single word is sent to the public
-      jisho.org API (<code>https://jisho.org/api/v1/search/words</code>) to fetch its dictionary entries. Nothing
-      else is sent: no account details, no viewing history, no identifiers. jisho.org's handling of requests is
-      covered by its own policies. You can turn word lookup off in the extension's popup.</li>
+      Subtitle files are downloaded from Netflix, the same way the Netflix player downloads them.</li>
+    <li><strong>Word lookup.</strong> Dictionary lookups use a dictionary bundled with the extension
+      (JMdict, © EDRDG), so the words you click never leave your browser. If you click
+      "More on jisho.org" in the lookup popup, jisho.org opens in a new tab with that word.</li>
     <li><strong>Pronunciation.</strong> Audio uses Chrome's built-in speech synthesis. If Chrome uses an online
       voice (such as "Google 日本語"), Chrome sends the spoken reading to Google to generate the audio, under
       Google's privacy policy.</li>
@@ -43,9 +41,22 @@
       developer never receives them.</li>
   </ul>
 
+  <h2>Payments (Premium)</h2>
+  <p>English subtitles and word lookup are paid features. Payments are handled by
+  <a href="https://extensionpay.com">ExtensionPay</a>, with card processing by
+  <a href="https://stripe.com/privacy">Stripe</a>.</p>
+  <ul>
+    <li>The extension stores a random ExtensionPay key in <code>chrome.storage.sync</code> and sends it to
+      extensionpay.com to check whether you have paid. It sends nothing else.</li>
+    <li>When you pay or log in, you enter your email address and payment details on ExtensionPay's and
+      Stripe's pages, not in the extension. They keep them under their own privacy policies. The developer
+      can see your email address and payment status in ExtensionPay, and uses them only to provide and support
+      Premium. Card details are never shared with the developer.</li>
+  </ul>
+
   <h2>Data sharing</h2>
-  <p>The developer does not receive any data from the extension, and no data is sold or transferred to third
-  parties for advertising, credit or any other purpose besides the word lookup described above.</p>
+  <p>No data is sold or transferred to third parties for advertising, credit or any other purpose besides
+  processing payments as described above.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="mailto:leo.t.nozawa@gmail.com">leo.t.nozawa@gmail.com</a></p>
